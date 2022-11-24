@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+
+		<title>Projet 5 - Portfolio</title>
+
+		<!-- CSS  -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link href="css/materialize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<!-- Début - Header -->
+
+		<!-- Dropdown - Projects  -->
+		<ul id="dropdown1" class="dropdown-content projects-dropdown-content">
+			<li>
+				<a href="projet1.html">Projet 1 - Communication personnelle</a>
+			</li>
+			<li>
+				<a href="projet2.html">Projet 2 - Introduction aux Systèmes Informatiques</a>
+			</li>
+			<li>
+				<a href="projet3.html">Projet 3 - Initiation à l'algorithmique</a>
+			</li>
+		</ul>
+
+		<!-- Dropdown - LinkedIn  -->
+		<ul id="dropdown2" class="dropdown-content linkedin-dropdown-content">
+			<li>
+				<a href="https://www.linkedin.com/in/nathanel-grossmann/" target="_blank" rel="nofollow">Nathanel Grossmann</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/glen-chaigneau/" target="_blank" rel="nofollow">Glen Chaigneau</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/company/guardia-cybersecurity-school/" target="_blank" rel="nofollow">Guardia Cybersecurity School</a>
+			</li>
+		</ul>
+
+		<nav class="gradient-mode lighten-1" role="navigation">
+			<div class="nav-wrapper container">
+				<a id="logo-container " href="https://app.dealroom.co/investors/elon_musk" target="_blank" rel="nofollow" class="brand-logo custom-brand-logo">Portfolio</a>
+
+				<!-- Navebar - PC -->
+				<ul class="right hide-on-med-and-down">
+					<li>
+						<a href="#">Accueil</a>
+					</li>
+					<li>
+						<a class="dropdown-trigger" href="#" data-target="dropdown1">Projets <i class="material-icons right custom">arrow_drop_down</i></a>
+					</li>
+					<li>
+						<a class="dropdown-trigger" href="#" data-target="dropdown2">LinkedIn <i class="material-icons right custom">arrow_drop_down</i></a>
+					</li>
+				</ul>
+
+				<!-- Navebar - Mobile -->
+				<ul id="nav-mobile" class="sidenav">
+					<a onclick="closeSideNav()" href="index.html">Accueil</a>
+					<li class="divider"></li>
+					<a onclick="closeSideNav()" href="projet1.html">Projet 1</a>
+					<a onclick="closeSideNav()" href="projet2.html">Projet 2</a>
+					<a onclick="closeSideNav()" href="projet3.html">Projet 3</a>
+					<li class="divider"></li>
+					<a onclick="closeSideNav()" href="#profile">Profiles</a>
+				</ul>
+				<a href="#" data-target="nav-mobile" class="sidenav-trigger">
+					<i class="material-icons">menu</i>
+				</a>
+			</div>
+		</nav>
+		<!-- Fin - Header -->
+
+		<!-- Carousel -->
+		<div class="carousel carousel-slider" data-indicators="true">
+			<div class="carousel-item black carousel-title projet1-background">
+				<div class="container">
+					<h2 class="carousel-title">Projet 1 - Communication personnelle</h2>
+					<p class="carousel-description">Objectif : Développer notre capacité d’expression orale.</p>
+					<div class="carousel-fixed-item">
+						<div class="container" id="project">
+							<a class="btn waves-effect carousel-gradient-btn" href="projet1.html" target="_blank">Voir le projet</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item black carousel-title projet2-background">
+				<div class="container">
+					<h2 class="carousel-title">Projet 2 - Introduction aux Systèmes Informatiques</h2>
+					<p class="carousel-description">Objectif : Développer nos compétences techniques dans la création, la configuration, mais surtout la sécurisation avancée d’un serveur Linux sous n’importe quelle distribution.</p>
+					<div class="carousel-fixed-item">
+						<div class="container"
+						>
+							<a class="btn waves-effect carousel-gradient-btn" href="projet2.html" target="_blank">Voir le projet</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item black carousel-title projet3-background">
+				<div class="container">
+					<h2 class="carousel-title">Projet 3 - Initiation à l'algorithmie</h2>
+					<p class="carousel-description">Objectif : Développer nos compétences en programmation sur Python.</p>
+					<div class="carousel-fixed-item">
+						<div class="container">
+							<a class="btn waves-effect carousel-gradient-btn" href="projet3.html" target="_blank">Voir le projet</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Container - Projects -->
+		<div class="section no-pad-bot" id="index-banner">
+			<div class="container">
+				<br>
+				<br>
+				<h2 class="header center projects-gradient-title">Bienvenue</h2>
+				<div class="row center">
+					<h5 class="header col s12 light">Bienvenue sur le Portefolio du Projet 5 de Guardia Cybersecurity School.<br>Tous les projets seront actualisés chaque semaine et les statistiques seront actualisées automatiquement. </h5>
+				</div>
+				<br>
+				<br>
+				<div class="row center">
+					<a href="https://www.linkedin.com/in/nathanel-grossmann/" class="btn-large waves-effect waves-light gradient-btn pulse">Explorer</a>
+				</div>
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+		</div>
+
+		<!-- Wrapper - Profils  -->
+		<div class="wrapper" id="profile">
+
+			<!-- Nathanel GROSSMANN  -->
+			<div class="profile-card js-profile-card">
+				<div class="profile-card__img profile-card__img__nathanel"></div>
+				<div class="profile-card__cnt js-profile-cnt">
+					<div class="profile-card__name">Nathanel GROSSMANN</div>
+					<div class="profile-card__txt">Développeur Fullstack <br>
+						<strong>Guardia Cybersecurity School</strong>
+					</div>
+					<div class="profile-card-loc">
+						<i class="material-icons">pin_drop</i>
+						<span class="profile-card-loc__txt"> Rhônes-Alpes </span>
+					</div>
+					<div class="profile-card-inf">
+						<div class="profile-card-inf__item">
+							<div class="profile-card-inf__title">913</div>
+							<div class="profile-card-inf__txt">Abonnés</div>
+						</div>
+						<div class="profile-card-inf__item">
+							<div class="profile-card-inf__title">65</div>
+							<div class="profile-card-inf__txt">Posts</div>
+						</div>
+						<div class="profile-card-inf__item">
+							<div class="profile-card-inf__title">5</div>
+							<div class="profile-card-inf__txt">Projets</div>
+						</div>
+					</div>
+					<div class="profile-card-social">
+						<a href="https://twitter.com/NathanelGROSSM1" class="profile-card-social__item instagram" target="_blank" rel="nofollow">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+						<a href="https://github.com/Nathgrsm" class="profile-card-social__item github" target="_blank" rel="nofollow">
+							<i class="fa-brands fa-github"></i>
+						</a>
+					</div>
+					<div class="profile-card-ctr">
+						<a href="https://www.linkedin.com/in/nathanel-grossmann/ id=" class="profile-card__button button--blue js-message-btn" target="_blank" rel="nofollow">Contacter</a>
+					</div>
+				</div>
+			</div>
+			<!-- Glen CHAIGNEAU  -->
+			<div class="profile-card js-profile-card">
+				<div class="profile-card__img profile-card__img__glen"></div>
+				<div class="profile-card__cnt js-profile-cnt">
+					<div class="profile-card__name">Glen CHAIGNEAU</div>
+					<div class="profile-card__txt">Développeur Web<br>
+						<strong>Guardia Cybersecurity School</strong>
+					</div>
+					<div class="profile-card-loc">
+						<i class="material-icons">pin_drop</i>
+						<span class="profile-card-loc__txt"> Rhônes-Alpes </span>
+					</div>
+					<div class="profile-card-inf">
+						<div class="profile-card-inf__item">
+							<div class="profile-card-inf__title">42</div>
+							<div class="profile-card-inf__txt">Abonnés</div>
+						</div>
+						<div class="profile-card-inf__item">
+							<div class="profile-card-inf__title">1</div>
+							<div class="profile-card-inf__txt">Post</div>
+						</div>
+						<div class="profile-card-inf__item">
+							<div class="profile-card-inf__title">5</div>
+							<div class="profile-card-inf__txt">Projets</div>
+						</div>
+					</div>
+					<div class="profile-card-social">
+						<a href="https://twitter.com/ChaigneauGlen" class="profile-card-social__item discord" target="_blank" rel="nofollow">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+						<a href="https://github.com/GlenChaigneau" class="profile-card-social__item github" target="_blank" rel="nofollow">
+							<i class="fa-brands fa-github"></i>
+						</a>
+					</div>
+					<div class="profile-card-ctr">
+						<a href="https://www.linkedin.com/in/glen-chaigneau/" class="profile-card__button button--blue js-message-btn" target="_blank" rel="nofollow">Contacter</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Container - Skills -->
+		<div class="container">
+			<br>
+			<br>
+			<h2 class="header center projects-gradient-title">Mes compétences</h2>
+			<div class="section">
+				<div class="row">
+					<div class="col s12 m3">
+						<div class="icon-block">
+							<h2 class="center light-blue-text">
+								<img class="skills-icons" src="img/php.png" alt="PHP Icon">
+							</h2>
+							<h5 class="center">PHP</h5>
+							<p class="light">PHP est un langage de programmation libre, principalement utilisé pour produire des pages Web dynamiques via un serveur HTTP, mais pouvant également fonctionner comme n'importe quel langage interprété de façon locale. PHP est un langage impératif orienté objet.</p>
+						</div>
+					</div>
+					<div class="col s12 m3">
+						<div class="icon-block">
+							<h2 class="center light-blue-text">
+								<img class="skills-icons" src="img/c++.png" alt="C++ Icon">
+							</h2>
+							<h5 class="center">C++</h5>
+							<p class="light">C++ est un langage de programmation compilé permettant la programmation sous de multiples paradigmes, dont la programmation procédurale, la programmation orientée objet et la programmation générique.</p>
+						</div>
+					</div>
+					<div class="col s12 m3">
+						<div class="icon-block">
+							<h2 class="center light-blue-text">
+								<img class="skills-icons" src="img/jquery.png" alt="Jquery">
+							</h2>
+							<h5 class="center">JQuery</h5>
+							<p class="light">jQuery est une bibliothèque JavaScript libre et multiplateforme créée pour faciliter l'écriture de scripts côté client dans le code HTML des pages web. La première version est lancée en janvier 2006 par John Resig.</p>
+						</div>
+					</div>
+					<div class="col s12 m3">
+						<div class="icon-block">
+							<h2 class="center light-blue-text">
+								<img class="skills-icons" src="img/python.png" alt="Python">
+							</h2>
+							<h5 class="center">Python</h5>
+							<p class="light">Python est un langage de programmation interprété, multiparadigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orienté objet.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+		</div>
+
+		<!-- Gitter Chat Link -->
+		<div  class="fixed-action-btn">
+			<a class="btn-floating custom-btn-floating btn-large modal-trigger" href="#form">
+				<i class="large material-icons">chat</i>
+			</a>
+		</div>
+
+		<!-- Contact Form -->
+		<div class="modal" id="form">
+			<div class="modal-content">
+				<section class="section container scrollspy" id="contact">
+					<div class="row">
+					<div class="col s12 l5">
+						<h2 class="indigo-text text-darken-4">Contact</h2>
+						<p>Devenez Expert en Cybersécurité avec de solides compétences de développeur informatique !
+							<br>
+							2 formations post bac dédiées aux métiers de la cybersécurité (de Bac à Bac+5).
+							<br>
+							En initiale et en alternance, diplômes RNCP Niveau 6 et 7.
+							<br>
+							4 000 m2 à Lyon & Paris.</p>
+					</div>
+					<div class="col s12 l5 offset-l2">
+						<form>
+						<div class="input-field">
+							<i class="material-icons prefix">email</i>
+							<input type="email" id="email">
+							<label for="email">Votre Email</label>
+						</div>
+						<div class="input-field">
+							<i class="material-icons prefix">message</i>
+							<textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+							<label for="message">Votre Message</label>
+						</div>
+						<div class="input-field">
+							<i class="material-icons prefix">date_range</i>
+							<input type="text" id="date" class="datepicker">
+							<label for="date">Choisissez une date</label>
+						</div>
+						<div class="input-field">
+							<p>Services requis :</p>
+							<p>
+							<label>
+								<input type="checkbox">
+								<span>Informations</span>
+							</label>
+							</p>
+							<p>
+							<label>
+								<input type="checkbox">
+								<span>Projets</span>
+							</label>
+							</p>
+						</div>
+						<div class="input-field center">
+							<button class="btn gradient-form">Soumettre</button>
+						</div>
+						</form>
+					</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="page-footer gradient-mode">
+			<div class="container">
+				<div class="row">
+					<div class="col l5 s12">
+						<h5 class="white-text title-footer">Qui sommes-nous ?</h5>
+						<p class="grey-text text-lighten-4 vertical-space">Nous sommes deux étudiants en cybersécurité et nous réalisons 15 projets différents chaque année grâce à notre école :
+							<br>
+							<a href="https://guardia.school/" target="_blank" rel="nofollow"><strong>Guardia Cybersecurity School</strong></a>
+						</p>
+					</div>
+					<div class="col l4 s12">
+						<h5 class="white-text title-footer">Projets <i class="fa-solid fa-folder"></i></h5>
+						<ul>
+							<li>
+								<a class="white-text" href="projet1.html">Projet 1 - Communication personnelle</a>
+							</li>
+							<li>
+								<a class="white-text" href="projet2.html">Projet 2 - Introduction aux Systèmes Informatiques</a>
+							</li>
+							<li>
+								<a class="white-text" href="projet3.html">Projet 3 - Initiation à l'algorithmique</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col l3 s12">
+						<h5 class="white-text title-footer">LinkedIn <i class="fa-brands fa-linkedin"></i></h5>
+						<ul>
+							<li>
+								<a class="white-text" href="https://www.linkedin.com/in/nathanel-grossmann/" target="_blank" rel="nofollow">Nathanel Grossmann</a>
+							</li>
+							<li>
+								<a class="white-text" href="https://www.linkedin.com/in/glen-chaigneau/" target="_blank" rel="nofollow">Glen Chaigneau</a>
+							</li>
+							<li>
+								<a class="white-text" href="https://www.linkedin.com/company/guardia-cybersecurity-school/" target="_blank" rel="nofollow">Guardia Cybersecurity School</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container"> Made with <a class="orange-text text-lighten-3" href="heart.html" target="_blank" rel="nofollow">❤️</a>
+				</div>
+			</div>
+		</footer>
+
+		<!--  Scripts-->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/script.js"></script>
+
+	</body>
+</html>
